@@ -109,7 +109,9 @@ export default function Register() {
                   />
                 </div>
                 {errors.name && (
-                  <p className="text-xs text-destructive">{errors.name.message}</p>
+                  <p className="text-xs text-destructive">
+                    {errors.name.message}
+                  </p>
                 )}
               </div>
 
@@ -135,13 +137,18 @@ export default function Register() {
                   />
                 </div>
                 {errors.email && (
-                  <p className="text-xs text-destructive">{errors.email.message}</p>
+                  <p className="text-xs text-destructive">
+                    {errors.email.message}
+                  </p>
                 )}
               </div>
 
               {/* Password Field */}
               <div className="space-y-2">
-                <Label htmlFor="password" className="text-foreground font-medium">
+                <Label
+                  htmlFor="password"
+                  className="text-foreground font-medium"
+                >
                   Password
                 </Label>
                 <div className="relative">
@@ -232,13 +239,18 @@ export default function Register() {
                     Terms of Service
                   </Link>{" "}
                   and{" "}
-                  <Link to="/privacy" className="text-primary hover:text-accent">
+                  <Link
+                    to="/privacy"
+                    className="text-primary hover:text-accent"
+                  >
                     Privacy Policy
                   </Link>
                 </label>
               </div>
               {errors.acceptTerms && (
-                <p className="text-xs text-destructive">{errors.acceptTerms.message}</p>
+                <p className="text-xs text-destructive">
+                  {errors.acceptTerms.message}
+                </p>
               )}
 
               {/* Submit Button */}

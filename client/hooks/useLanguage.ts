@@ -8,13 +8,13 @@ export function useLanguage() {
     if (saved && saved in translations) {
       return saved as Language;
     }
-    
+
     // Try to detect from browser language
     const browserLang = navigator.language.split("-")[0];
     if (browserLang in translations) {
       return browserLang as Language;
     }
-    
+
     // Default to English
     return "en";
   });
@@ -30,7 +30,7 @@ export function useLanguage() {
     (key: TranslationKeys): string => {
       return translations[language][key] || translations.en[key] || key;
     },
-    [language]
+    [language],
   );
 
   return useMemo(
@@ -40,6 +40,6 @@ export function useLanguage() {
       t,
       availableLanguages: Object.keys(translations) as Language[],
     }),
-    [language, changeLanguage, t]
+    [language, changeLanguage, t],
   );
 }

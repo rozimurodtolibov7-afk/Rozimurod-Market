@@ -83,14 +83,19 @@ export default function Login() {
                   />
                 </div>
                 {errors.email && (
-                  <p className="text-xs text-destructive">{errors.email.message}</p>
+                  <p className="text-xs text-destructive">
+                    {errors.email.message}
+                  </p>
                 )}
               </div>
 
               {/* Password Field */}
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <Label htmlFor="password" className="text-foreground font-medium">
+                  <Label
+                    htmlFor="password"
+                    className="text-foreground font-medium"
+                  >
                     Password
                   </Label>
                   <Link
@@ -208,7 +213,8 @@ export default function Login() {
           {/* Security Note */}
           <div className="mt-6 p-4 rounded-lg bg-primary/5 border border-primary/20">
             <p className="text-xs text-muted-foreground text-center">
-              🔒 Your account is protected with industry-standard encryption. We never share your data.
+              🔒 Your account is protected with industry-standard encryption. We
+              never share your data.
             </p>
           </div>
         </div>

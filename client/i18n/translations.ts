@@ -47,7 +47,8 @@ export const translations = {
     securePurchase: "Secure Purchase",
     instantDelivery: "Instant Delivery",
     signUpInSeconds: "Sign up in seconds and set up your profile",
-    discoverAmazing: "Discover amazing digital products from creators worldwide",
+    discoverAmazing:
+      "Discover amazing digital products from creators worldwide",
     paySafely: "Pay safely with Stripe, PayPal, or digital wallets",
     getYourProduct: "Get your product instantly or through your email",
     readyToStart: "Ready to Start Your Journey?",
@@ -57,15 +58,19 @@ export const translations = {
 
     // Features
     lightningFast: "Lightning Fast",
-    instantProductDelivery: "Instant product delivery and transfers upon purchase completion",
+    instantProductDelivery:
+      "Instant product delivery and transfers upon purchase completion",
     secureEncrypted: "Secure & Encrypted",
-    militaryGradeEncryption: "Military-grade encryption for all user data and transactions",
+    militaryGradeEncryption:
+      "Military-grade encryption for all user data and transactions",
     realTimeChat: "Real-time Chat",
-    communicateDirectly: "Communicate directly with buyers and sellers instantly",
+    communicateDirectly:
+      "Communicate directly with buyers and sellers instantly",
     verifiedReviews: "Verified Reviews",
     authenticRatings: "Authentic ratings from verified buyers and sellers",
     aiRecommendations: "AI Recommendations",
-    smartSuggestions: "Smart suggestions based on your preferences and behavior",
+    smartSuggestions:
+      "Smart suggestions based on your preferences and behavior",
     multilingual: "Multilingual",
     supportForLanguages: "Support for 50+ languages and global payment methods",
 
@@ -90,7 +95,8 @@ export const translations = {
 
     // Register Page
     createAccountTitle: "Create Account",
-    joinRozimurod: "Join Rozimurod Market today and start your creative journey",
+    joinRozimurod:
+      "Join Rozimurod Market today and start your creative journey",
     fullName: "Full Name",
     johnDoe: "John Doe",
     atLeast8Characters: "At least 8 characters",
@@ -212,9 +218,11 @@ export const translations = {
     securePurchase: "Compra Segura",
     instantDelivery: "Entrega Instantánea",
     signUpInSeconds: "Regístrate en segundos y configura tu perfil",
-    discoverAmazing: "Descubre increíbles productos digitales de creadores de todo el mundo",
+    discoverAmazing:
+      "Descubre increíbles productos digitales de creadores de todo el mundo",
     paySafely: "Paga de forma segura con Stripe, PayPal o billeteras digitales",
-    getYourProduct: "Obtén tu producto instantáneamente o por correo electrónico",
+    getYourProduct:
+      "Obtén tu producto instantáneamente o por correo electrónico",
     readyToStart: "¿Listo para Comenzar tu Viaje?",
     joinThousands:
       "Únete a miles de creadores ganando dinero vendiendo sus productos digitales en Rozimurod Market.",
@@ -222,17 +230,23 @@ export const translations = {
 
     // Features
     lightningFast: "Rápido como el Rayo",
-    instantProductDelivery: "Entrega instantánea de productos y transferencias al completar la compra",
+    instantProductDelivery:
+      "Entrega instantánea de productos y transferencias al completar la compra",
     secureEncrypted: "Seguro y Encriptado",
-    militaryGradeEncryption: "Encriptación de grado militar para todos los datos de usuario y transacciones",
+    militaryGradeEncryption:
+      "Encriptación de grado militar para todos los datos de usuario y transacciones",
     realTimeChat: "Chat en Tiempo Real",
-    communicateDirectly: "Comunícate directamente con compradores y vendedores instantáneamente",
+    communicateDirectly:
+      "Comunícate directamente con compradores y vendedores instantáneamente",
     verifiedReviews: "Reseñas Verificadas",
-    authenticRatings: "Calificaciones auténticas de compradores y vendedores verificados",
+    authenticRatings:
+      "Calificaciones auténticas de compradores y vendedores verificados",
     aiRecommendations: "Recomendaciones de IA",
-    smartSuggestions: "Sugerencias inteligentes basadas en tus preferencias y comportamiento",
+    smartSuggestions:
+      "Sugerencias inteligentes basadas en tus preferencias y comportamiento",
     multilingual: "Multilingüe",
-    supportForLanguages: "Soporte para más de 50 idiomas y métodos de pago globales",
+    supportForLanguages:
+      "Soporte para más de 50 idiomas y métodos de pago globales",
 
     // Login Page
     welcomeBack: "Bienvenido de Vuelta",
@@ -315,7 +329,8 @@ export const translations = {
     browseAll: "Voir Tout →",
     buyNow: "Acheter Maintenant",
     whyChooseRozimurod: "Pourquoi Choisir Rozimurod",
-    powerfulFeaturesForCreators: "Fonctionnalités Puissantes pour les Créateurs",
+    powerfulFeaturesForCreators:
+      "Fonctionnalités Puissantes pour les Créateurs",
     everythingYouNeed:
       "Tout ce dont vous avez besoin pour réussir en tant que créateur numérique sur une seule plateforme",
     gettingStarted: "Pour Commencer",
@@ -324,9 +339,12 @@ export const translations = {
     browseProducts: "Parcourir les Produits",
     securePurchase: "Achat Sécurisé",
     instantDelivery: "Livraison Instantanée",
-    signUpInSeconds: "Inscrivez-vous en quelques secondes et configurez votre profil",
-    discoverAmazing: "Découvrez des produits numériques extraordinaires créés par des créateurs du monde entier",
-    paySafely: "Payez en toute sécurité avec Stripe, PayPal ou les portefeuilles numériques",
+    signUpInSeconds:
+      "Inscrivez-vous en quelques secondes et configurez votre profil",
+    discoverAmazing:
+      "Découvrez des produits numériques extraordinaires créés par des créateurs du monde entier",
+    paySafely:
+      "Payez en toute sécurité avec Stripe, PayPal ou les portefeuilles numériques",
     getYourProduct: "Obtenez votre produit instantanément ou par email",
     readyToStart: "Prêt à Commencer votre Parcours?",
     joinThousands:
@@ -335,17 +353,23 @@ export const translations = {
 
     // Features
     lightningFast: "Rapide Comme l'Éclair",
-    instantProductDelivery: "Livraison instantanée des produits et transferts à l'achat",
+    instantProductDelivery:
+      "Livraison instantanée des produits et transferts à l'achat",
     secureEncrypted: "Sécurisé et Crypté",
-    militaryGradeEncryption: "Cryptage de qualité militaire pour toutes les données utilisateur et les transactions",
+    militaryGradeEncryption:
+      "Cryptage de qualité militaire pour toutes les données utilisateur et les transactions",
     realTimeChat: "Chat en Temps Réel",
-    communicateDirectly: "Communiquez directement avec les acheteurs et les vendeurs instantanément",
+    communicateDirectly:
+      "Communiquez directement avec les acheteurs et les vendeurs instantanément",
     verifiedReviews: "Avis Vérifiés",
-    authenticRatings: "Évaluations authentiques d'acheteurs et de vendeurs vérifiés",
+    authenticRatings:
+      "Évaluations authentiques d'acheteurs et de vendeurs vérifiés",
     aiRecommendations: "Recommandations IA",
-    smartSuggestions: "Suggestions intelligentes basées sur vos préférences et votre comportement",
+    smartSuggestions:
+      "Suggestions intelligentes basées sur vos préférences et votre comportement",
     multilingual: "Multilingue",
-    supportForLanguages: "Support de plus de 50 langues et méthodes de paiement mondiales",
+    supportForLanguages:
+      "Support de plus de 50 langues et méthodes de paiement mondiales",
 
     // Login Page
     welcomeBack: "Bienvenue",
@@ -368,7 +392,8 @@ export const translations = {
 
     // Register Page
     createAccountTitle: "Créer un Compte",
-    joinRozimurod: "Rejoignez Rozimurod Market aujourd'hui et lancez votre parcours créatif",
+    joinRozimurod:
+      "Rejoignez Rozimurod Market aujourd'hui et lancez votre parcours créatif",
     fullName: "Nom Complet",
     johnDoe: "Jean Dupont",
     atLeast8Characters: "Au moins 8 caractères",
@@ -387,7 +412,8 @@ export const translations = {
     whatYouGet: "✓ Ce que vous obtenez:",
     digitalWallet: "Portefeuille numérique pour les paiements sécurisés",
     sellOrBuy: "Vendre ou acheter des produits numériques",
-    realTimeChatFeature: "Chat en temps réel avec les acheteurs et les vendeurs",
+    realTimeChatFeature:
+      "Chat en temps réel avec les acheteurs et les vendeurs",
     aiPoweredRecommendations: "Recommandations alimentées par l'IA",
   },
 } as const;

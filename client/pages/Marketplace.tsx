@@ -9,9 +9,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import {
-  Checkbox,
-} from "@/components/ui/checkbox";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Slider } from "@/components/ui/slider";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -22,12 +20,14 @@ const allProducts = [
   {
     id: "1",
     title: "Premium UI Kit - Modern Design System",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
     price: 29.99,
     originalPrice: 49.99,
     seller: {
       name: "Creative Studio Pro",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
       rating: 4.8,
       reviews: 234,
     },
@@ -37,12 +37,14 @@ const allProducts = [
   {
     id: "2",
     title: "Professional Logo Design Package",
-    image: "https://images.unsplash.com/photo-1545665225-4b21f3862602?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1545665225-4b21f3862602?w=400&h=400&fit=crop",
     price: 49.99,
     originalPrice: 79.99,
     seller: {
       name: "Brand Masters",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 5,
       reviews: 512,
     },
@@ -53,12 +55,14 @@ const allProducts = [
   {
     id: "3",
     title: "3D Illustration Bundle - 50 Assets",
-    image: "https://images.unsplash.com/photo-1552084443-5e93c55b127c?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1552084443-5e93c55b127c?w=400&h=400&fit=crop",
     price: 99.99,
     originalPrice: 149.99,
     seller: {
       name: "Digital Artists Collective",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
       rating: 4.9,
       reviews: 189,
     },
@@ -69,12 +73,14 @@ const allProducts = [
   {
     id: "4",
     title: "Web Template - E-commerce Complete",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop",
     price: 39.99,
     originalPrice: 69.99,
     seller: {
       name: "Web Dev Team",
-      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
       rating: 4.7,
       reviews: 445,
     },
@@ -85,12 +91,14 @@ const allProducts = [
   {
     id: "5",
     title: "Social Media Graphics Pack",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
     price: 19.99,
     originalPrice: 39.99,
     seller: {
       name: "Social Design Hub",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 4.6,
       reviews: 321,
     },
@@ -100,12 +108,14 @@ const allProducts = [
   {
     id: "6",
     title: "Photography Lightroom Presets",
-    image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop",
     price: 24.99,
     originalPrice: 39.99,
     seller: {
       name: "Photo Masters",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
       rating: 4.9,
       reviews: 678,
     },
@@ -115,12 +125,14 @@ const allProducts = [
   {
     id: "7",
     title: "Icon Library - 1000+ Icons",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
     price: 34.99,
     originalPrice: 59.99,
     seller: {
       name: "Icon Designers Pro",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
       rating: 4.8,
       reviews: 445,
     },
@@ -130,12 +142,14 @@ const allProducts = [
   {
     id: "8",
     title: "Mobile App UI Kit - Flutter",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
     price: 54.99,
     originalPrice: 89.99,
     seller: {
       name: "App Dev Studio",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 4.7,
       reviews: 234,
     },
@@ -170,7 +184,7 @@ export default function Marketplace() {
     category?: string,
     sort?: string,
     price?: number[],
-    search?: string
+    search?: string,
   ) => {
     let filtered = allProducts;
 
@@ -181,7 +195,9 @@ export default function Marketplace() {
 
     // Price filter
     if (price) {
-      filtered = filtered.filter((p) => p.price >= price[0] && p.price <= price[1]);
+      filtered = filtered.filter(
+        (p) => p.price >= price[0] && p.price <= price[1],
+      );
     }
 
     // Search filter
@@ -189,7 +205,7 @@ export default function Marketplace() {
       filtered = filtered.filter(
         (p) =>
           p.title.toLowerCase().includes(search.toLowerCase()) ||
-          p.category.toLowerCase().includes(search.toLowerCase())
+          p.category.toLowerCase().includes(search.toLowerCase()),
       );
     }
 
@@ -223,12 +239,7 @@ export default function Marketplace() {
 
   const handleCategoryChange = (category: string) => {
     setSelectedCategory(category);
-    handleFilter(
-      category,
-      sortBy,
-      priceRange,
-      searchQuery
-    );
+    handleFilter(category, sortBy, priceRange, searchQuery);
   };
 
   const handleSortChange = (sort: string) => {
@@ -319,9 +330,7 @@ export default function Marketplace() {
                 checked={ratingFilter === rating}
                 onCheckedChange={() => handleRatingChange(rating)}
               />
-              <span className="text-muted-foreground">
-                {rating}★ & up
-              </span>
+              <span className="text-muted-foreground">{rating}★ & up</span>
             </label>
           ))}
         </div>
@@ -369,7 +378,9 @@ export default function Marketplace() {
           <div className="hidden lg:block">
             <div className="sticky top-24 space-y-6">
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-4">Filters</h3>
+                <h3 className="text-lg font-bold text-foreground mb-4">
+                  Filters
+                </h3>
                 <button
                   onClick={() => {
                     setSelectedCategory("All Categories");
@@ -377,12 +388,7 @@ export default function Marketplace() {
                     setPriceRange([0, 200]);
                     setRatingFilter(null);
                     setSearchQuery("");
-                    handleFilter(
-                      "All Categories",
-                      "trending",
-                      [0, 200],
-                      ""
-                    );
+                    handleFilter("All Categories", "trending", [0, 200], "");
                   }}
                   className="text-sm text-primary hover:text-primary/80 mb-4"
                 >
@@ -436,12 +442,7 @@ export default function Marketplace() {
                     setPriceRange([0, 200]);
                     setRatingFilter(null);
                     setSearchQuery("");
-                    handleFilter(
-                      "All Categories",
-                      "trending",
-                      [0, 200],
-                      ""
-                    );
+                    handleFilter("All Categories", "trending", [0, 200], "");
                   }}
                 >
                   Clear Filters

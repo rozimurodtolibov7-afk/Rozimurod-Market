@@ -181,7 +181,10 @@ export default function ProductCard({
             Sold Out
           </Button>
         ) : (
-          <Button className="w-full rounded-lg bg-gradient-to-r from-primary to-accent hover:shadow-lg transition-shadow" asChild>
+          <Button
+            className="w-full rounded-lg bg-gradient-to-r from-primary to-accent hover:shadow-lg transition-shadow"
+            asChild
+          >
             <Link to={`/product/${id}`}>View Details</Link>
           </Button>
         )}

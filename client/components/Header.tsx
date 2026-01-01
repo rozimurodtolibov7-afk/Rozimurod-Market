@@ -27,7 +27,10 @@ interface HeaderProps {
   userName?: string;
 }
 
-export default function Header({ isLoggedIn = false, userName = "User" }: HeaderProps) {
+export default function Header({
+  isLoggedIn = false,
+  userName = "User",
+}: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [language, setLanguage] = useState("en");
 
@@ -53,16 +56,17 @@ export default function Header({ isLoggedIn = false, userName = "User" }: Header
         {/* Top Navigation */}
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center gap-2 group shrink-0"
-          >
+          <Link to="/" className="flex items-center gap-2 group shrink-0">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
               <span className="text-white font-bold text-lg">RM</span>
             </div>
             <div className="hidden sm:flex flex-col">
-              <span className="font-bold text-base text-foreground">Rozimurod</span>
-              <span className="text-xs text-muted-foreground font-medium">Market</span>
+              <span className="font-bold text-base text-foreground">
+                Rozimurod
+              </span>
+              <span className="text-xs text-muted-foreground font-medium">
+                Market
+              </span>
             </div>
           </Link>
 
@@ -218,7 +222,12 @@ export default function Header({ isLoggedIn = false, userName = "User" }: Header
               </DropdownMenu>
             ) : (
               <div className="flex gap-2">
-                <Button variant="ghost" size="sm" className="rounded-lg" asChild>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-lg"
+                  asChild
+                >
                   <Link to="/login">Login</Link>
                 </Button>
                 <Button

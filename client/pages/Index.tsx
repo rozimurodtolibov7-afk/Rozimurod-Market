@@ -18,12 +18,14 @@ const trendingProducts = [
   {
     id: "1",
     title: "Premium UI Kit - Modern Design System",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=400&fit=crop",
     price: 29.99,
     originalPrice: 49.99,
     seller: {
       name: "Creative Studio Pro",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
       rating: 4.8,
       reviews: 234,
     },
@@ -33,12 +35,14 @@ const trendingProducts = [
   {
     id: "2",
     title: "Professional Logo Design Package",
-    image: "https://images.unsplash.com/photo-1545665225-4b21f3862602?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1545665225-4b21f3862602?w=400&h=400&fit=crop",
     price: 49.99,
     originalPrice: 79.99,
     seller: {
       name: "Brand Masters",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 5,
       reviews: 512,
     },
@@ -48,12 +52,14 @@ const trendingProducts = [
   {
     id: "3",
     title: "3D Illustration Bundle - 50 Assets",
-    image: "https://images.unsplash.com/photo-1552084443-5e93c55b127c?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1552084443-5e93c55b127c?w=400&h=400&fit=crop",
     price: 99.99,
     originalPrice: 149.99,
     seller: {
       name: "Digital Artists Collective",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
       rating: 4.9,
       reviews: 189,
     },
@@ -63,12 +69,14 @@ const trendingProducts = [
   {
     id: "4",
     title: "Web Template - E-commerce Complete",
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop",
     price: 39.99,
     originalPrice: 69.99,
     seller: {
       name: "Web Dev Team",
-      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop",
       rating: 4.7,
       reviews: 445,
     },
@@ -83,7 +91,8 @@ const features = [
   {
     icon: <Zap className="w-8 h-8" />,
     title: "Lightning Fast",
-    description: "Instant product delivery and transfers upon purchase completion",
+    description:
+      "Instant product delivery and transfers upon purchase completion",
   },
   {
     icon: <Shield className="w-8 h-8" />,
@@ -158,7 +167,9 @@ export default function Index() {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
-                The ultimate marketplace for digital creators. Sell your designs, images, logos, and digital products to millions of buyers worldwide. Build your creative empire today.
+                The ultimate marketplace for digital creators. Sell your
+                designs, images, logos, and digital products to millions of
+                buyers worldwide. Build your creative empire today.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
@@ -180,11 +191,15 @@ export default function Index() {
               <div className="flex flex-wrap gap-6 pt-6 border-t border-border">
                 <div>
                   <p className="text-2xl font-bold text-primary">10M+</p>
-                  <p className="text-sm text-muted-foreground">Products Listed</p>
+                  <p className="text-sm text-muted-foreground">
+                    Products Listed
+                  </p>
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-primary">500K+</p>
-                  <p className="text-sm text-muted-foreground">Active Creators</p>
+                  <p className="text-sm text-muted-foreground">
+                    Active Creators
+                  </p>
                 </div>
                 <div>
                   <p className="text-2xl font-bold text-primary">$50M+</p>
@@ -323,7 +338,8 @@ export default function Index() {
               Powerful Features for Creators
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to succeed as a digital creator on a single platform
+              Everything you need to succeed as a digital creator on a single
+              platform
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -338,9 +354,7 @@ export default function Index() {
                 <h3 className="text-lg font-bold text-foreground mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground">
-                  {feature.description}
-                </p>
+                <p className="text-muted-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -389,7 +403,8 @@ export default function Index() {
               Ready to Start Your Journey?
             </h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of creators earning money by selling their digital products on Rozimurod Market.
+              Join thousands of creators earning money by selling their digital
+              products on Rozimurod Market.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -425,24 +440,34 @@ export default function Index() {
                 <span className="font-bold">Rozimurod Market</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                The world's leading marketplace for digital products and creative services.
+                The world's leading marketplace for digital products and
+                creative services.
               </p>
             </div>
             <div>
               <h4 className="font-semibold text-foreground mb-4">Platform</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/marketplace" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/marketplace"
+                    className="hover:text-primary transition-colors"
+                  >
                     Marketplace
                   </Link>
                 </li>
                 <li>
-                  <Link to="/trending" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/trending"
+                    className="hover:text-primary transition-colors"
+                  >
                     Trending
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hot-deals" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/hot-deals"
+                    className="hover:text-primary transition-colors"
+                  >
                     Hot Deals
                   </Link>
                 </li>
@@ -452,17 +477,26 @@ export default function Index() {
               <h4 className="font-semibold text-foreground mb-4">Creators</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/sell" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/sell"
+                    className="hover:text-primary transition-colors"
+                  >
                     Sell Products
                   </Link>
                 </li>
                 <li>
-                  <Link to="/creator-guide" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/creator-guide"
+                    className="hover:text-primary transition-colors"
+                  >
                     Creator Guide
                   </Link>
                 </li>
                 <li>
-                  <Link to="/support" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/support"
+                    className="hover:text-primary transition-colors"
+                  >
                     Support
                   </Link>
                 </li>
@@ -472,17 +506,26 @@ export default function Index() {
               <h4 className="font-semibold text-foreground mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>
-                  <Link to="/about" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/about"
+                    className="hover:text-primary transition-colors"
+                  >
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/privacy" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/privacy"
+                    className="hover:text-primary transition-colors"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms" className="hover:text-primary transition-colors">
+                  <Link
+                    to="/terms"
+                    className="hover:text-primary transition-colors"
+                  >
                     Terms of Service
                   </Link>
                 </li>
@@ -491,7 +534,8 @@ export default function Index() {
           </div>
           <div className="border-t border-border pt-8">
             <p className="text-sm text-muted-foreground text-center">
-              © 2024 Rozimurod Market. All rights reserved. | Secure • Trusted • Global
+              © 2024 Rozimurod Market. All rights reserved. | Secure • Trusted
+              • Global
             </p>
           </div>
         </div>
