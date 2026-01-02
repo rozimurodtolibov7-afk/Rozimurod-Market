@@ -10,6 +10,9 @@ import Index from "./pages/Index";
 import Marketplace from "./pages/Marketplace";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import ProductDetail from "./pages/ProductDetail";
+import UploadProduct from "./pages/UploadProduct";
+import Wallet from "./pages/Wallet";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 import {
