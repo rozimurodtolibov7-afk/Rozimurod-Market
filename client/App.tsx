@@ -13,6 +13,9 @@ import Register from "./pages/Register";
 import ProductDetail from "./pages/ProductDetail";
 import UploadProduct from "./pages/UploadProduct";
 import Wallet from "./pages/Wallet";
+import AdminDashboard from "./pages/AdminDashboard";
+import SellerDashboard from "./pages/SellerDashboard";
+import Checkout from "./pages/Checkout";
 import Placeholder from "./pages/Placeholder";
 import NotFound from "./pages/NotFound";
 import {
