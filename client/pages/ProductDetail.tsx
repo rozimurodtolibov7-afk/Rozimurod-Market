@@ -34,7 +34,8 @@ export default function ProductDetail() {
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
     seller: {
       name: "Web Dev Studio",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
       rating: 4.9,
       reviews: 234,
       salesCount: 1203,
@@ -214,7 +215,9 @@ export default function ProductDetail() {
                   🔒 Secure Purchase Guarantee
                 </p>
                 <p className="text-muted-foreground">
-                  Your purchase is protected with industry-standard encryption and secure payment processing. Files are verified and delivered safely.
+                  Your purchase is protected with industry-standard encryption
+                  and secure payment processing. Files are verified and
+                  delivered safely.
                 </p>
               </div>
             </div>
@@ -232,7 +235,8 @@ export default function ProductDetail() {
                       🔥 Auction Triggered!
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      Multiple buyers want this product. An auction is active for the next buyer!
+                      Multiple buyers want this product. An auction is active
+                      for the next buyer!
                     </p>
                   </div>
                 </div>
@@ -261,7 +265,7 @@ export default function ProductDetail() {
                       {Math.round(
                         ((product.originalPrice - product.price) /
                           product.originalPrice) *
-                          100
+                          100,
                       )}
                       %)
                     </p>
@@ -290,7 +294,10 @@ export default function ProductDetail() {
 
                   {hasMultipleBidders && (
                     <div className="space-y-2">
-                      <Label htmlFor="bidAmount" className="text-sm font-semibold">
+                      <Label
+                        htmlFor="bidAmount"
+                        className="text-sm font-semibold"
+                      >
                         <Gavel className="w-4 h-4 inline mr-1" />
                         Place Bid
                       </Label>
@@ -309,10 +316,7 @@ export default function ProductDetail() {
                             step="0.01"
                           />
                         </div>
-                        <Button
-                          variant="outline"
-                          className="rounded-lg px-6"
-                        >
+                        <Button variant="outline" className="rounded-lg px-6">
                           Bid
                         </Button>
                       </div>
@@ -327,7 +331,9 @@ export default function ProductDetail() {
 
             {/* Seller Info */}
             <Card className="p-6 border-border">
-              <h3 className="font-bold text-foreground mb-4">👤 About Seller</h3>
+              <h3 className="font-bold text-foreground mb-4">
+                👤 About Seller
+              </h3>
               <div className="flex items-start gap-4 mb-4">
                 <img
                   src={product.seller.avatar}
@@ -372,10 +378,7 @@ export default function ProductDetail() {
                   </span>
                 </div>
               </div>
-              <Button
-                variant="outline"
-                className="w-full mt-4 rounded-lg"
-              >
+              <Button variant="outline" className="w-full mt-4 rounded-lg">
                 Contact Seller
               </Button>
             </Card>

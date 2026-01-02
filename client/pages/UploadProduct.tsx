@@ -103,7 +103,9 @@ export default function UploadProduct() {
               Upload Your Digital Product
             </h1>
             <p className="text-lg text-muted-foreground">
-              Share your creative work with thousands of buyers worldwide. Every product is protected with our Rozimurod Market watermark until purchased.
+              Share your creative work with thousands of buyers worldwide. Every
+              product is protected with our Rozimurod Market watermark until
+              purchased.
             </p>
           </div>
 
@@ -116,7 +118,8 @@ export default function UploadProduct() {
                   ⚠️ Content Moderation Policy
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Rozimurod Market maintains strict content standards. The following content is strictly forbidden:
+                  Rozimurod Market maintains strict content standards. The
+                  following content is strictly forbidden:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {forbiddenContent.map((item, idx) => (
@@ -141,7 +144,10 @@ export default function UploadProduct() {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
               {/* Product Title */}
               <div className="space-y-2">
-                <Label htmlFor="title" className="text-foreground font-semibold">
+                <Label
+                  htmlFor="title"
+                  className="text-foreground font-semibold"
+                >
                   Product Title *
                 </Label>
                 <Input
@@ -161,7 +167,9 @@ export default function UploadProduct() {
                   })}
                 />
                 {errors.title && (
-                  <p className="text-xs text-destructive">{errors.title.message}</p>
+                  <p className="text-xs text-destructive">
+                    {errors.title.message}
+                  </p>
                 )}
               </div>
 
@@ -195,7 +203,10 @@ export default function UploadProduct() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {/* Category */}
                 <div className="space-y-2">
-                  <Label htmlFor="category" className="text-foreground font-semibold">
+                  <Label
+                    htmlFor="category"
+                    className="text-foreground font-semibold"
+                  >
                     Category *
                   </Label>
                   <Select {...register("category", { required: true })}>
@@ -219,7 +230,10 @@ export default function UploadProduct() {
 
                 {/* Price */}
                 <div className="space-y-2">
-                  <Label htmlFor="price" className="text-foreground font-semibold">
+                  <Label
+                    htmlFor="price"
+                    className="text-foreground font-semibold"
+                  >
                     Price (USD) *
                   </Label>
                   <div className="relative">
@@ -247,7 +261,9 @@ export default function UploadProduct() {
                     />
                   </div>
                   {errors.price && (
-                    <p className="text-xs text-destructive">{errors.price.message}</p>
+                    <p className="text-xs text-destructive">
+                      {errors.price.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -267,7 +283,9 @@ export default function UploadProduct() {
                   <label htmlFor="file" className="cursor-pointer block">
                     <Upload className="w-8 h-8 mx-auto mb-2 text-muted-foreground" />
                     <p className="font-semibold text-foreground mb-1">
-                      {fileSelected ? "✓ File selected" : "Click to upload or drag and drop"}
+                      {fileSelected
+                        ? "✓ File selected"
+                        : "Click to upload or drag and drop"}
                     </p>
                     {fileSelected ? (
                       <p className="text-sm text-primary">{fileName}</p>
@@ -289,10 +307,12 @@ export default function UploadProduct() {
                       Platform Commission
                     </p>
                     <p className="text-muted-foreground">
-                      For every sale, Rozimurod Market retains 1% as platform commission. You receive the remaining 99%.
+                      For every sale, Rozimurod Market retains 1% as platform
+                      commission. You receive the remaining 99%.
                     </p>
                     <p className="text-xs text-muted-foreground mt-2">
-                      Example: If product sells for $100, you receive $99 in your wallet.
+                      Example: If product sells for $100, you receive $99 in
+                      your wallet.
                     </p>
                   </div>
                 </div>
@@ -307,7 +327,9 @@ export default function UploadProduct() {
                       Automatic Watermark Protection
                     </p>
                     <p className="text-muted-foreground">
-                      Your product will automatically display a "Rozimurod Market" watermark until purchased. This protects your intellectual property.
+                      Your product will automatically display a "Rozimurod
+                      Market" watermark until purchased. This protects your
+                      intellectual property.
                     </p>
                   </div>
                 </div>
@@ -324,7 +346,8 @@ export default function UploadProduct() {
                     })}
                   />
                   <span className="text-sm text-foreground">
-                    I confirm this product contains no adult, illegal, or unethical content and complies with all moderation policies
+                    I confirm this product contains no adult, illegal, or
+                    unethical content and complies with all moderation policies
                   </span>
                 </label>
                 {errors.acceptModeration && (
@@ -338,12 +361,12 @@ export default function UploadProduct() {
                     type="checkbox"
                     className="mt-1 rounded accent-primary"
                     {...register("acceptLegal", {
-                      required:
-                        "You must confirm ownership and legal rights",
+                      required: "You must confirm ownership and legal rights",
                     })}
                   />
                   <span className="text-sm text-foreground">
-                    I own all rights to this product and take full responsibility for its content
+                    I own all rights to this product and take full
+                    responsibility for its content
                   </span>
                 </label>
                 {errors.acceptLegal && (

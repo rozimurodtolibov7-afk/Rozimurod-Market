@@ -46,8 +46,10 @@ export const translations = {
     browseProducts: "Mahsulotlarni Ko'rish",
     securePurchase: "Xavfsiz Xarid",
     instantDelivery: "Oniy Yetkazish",
-    signUpInSeconds: "Soniyalar ichida ro'yxatdan o'ting va profilingizni sozlang",
-    discoverAmazing: "Butun dunyadagi ijodkorlardan ajoyib raqamli mahsulotlarni kashf qiling",
+    signUpInSeconds:
+      "Soniyalar ichida ro'yxatdan o'ting va profilingizni sozlang",
+    discoverAmazing:
+      "Butun dunyadagi ijodkorlardan ajoyib raqamli mahsulotlarni kashf qiling",
     paySafely: "Stripe, PayPal yoki raqamli hamyonlar orqali xavfsiz to'lang",
     getYourProduct: "Mahsulotni oniy yoki elektron pochta orqali oling",
     readyToStart: "Boshlashga Tayyormi?",
@@ -57,15 +59,20 @@ export const translations = {
 
     // Features
     lightningFast: "Chaqimoq Tezligi",
-    instantProductDelivery: "Xarid to'lganidan so'ng oniy mahsulot yetkazish va o'tkazish",
+    instantProductDelivery:
+      "Xarid to'lganidan so'ng oniy mahsulot yetkazish va o'tkazish",
     secureEncrypted: "Xavfsiz va Shifrlangan",
-    militaryGradeEncryption: "Barcha foydalanuvchi ma'lumotlari va tranzaksiyalari uchun voysq darajasidagi shifrlash",
+    militaryGradeEncryption:
+      "Barcha foydalanuvchi ma'lumotlari va tranzaksiyalari uchun voysq darajasidagi shifrlash",
     realTimeChat: "Real Vaqt Chat",
-    communicateDirectly: "To'g'ridan-to'g'ri xaridorlar va sotuvchilar bilan oniy muloqot qiling",
+    communicateDirectly:
+      "To'g'ridan-to'g'ri xaridorlar va sotuvchilar bilan oniy muloqot qiling",
     verifiedReviews: "Tasdiqlangan Sharhlar",
-    authenticRatings: "Tasdiqlangan xaridorlar va sotuvchilardan haqiqiy reyting",
+    authenticRatings:
+      "Tasdiqlangan xaridorlar va sotuvchilardan haqiqiy reyting",
     aiRecommendations: "AI Tavsiyalar",
-    smartSuggestions: "Sizning afzalliklaringiz va xatti-harakatlaringizga asoslangan aqlli takliflar",
+    smartSuggestions:
+      "Sizning afzalliklaringiz va xatti-harakatlaringizga asoslangan aqlli takliflar",
     multilingual: "Ko'p Tilga",
     supportForLanguages: "50+ tilni va global to'lov usullarini qo'llash",
 
@@ -90,7 +97,8 @@ export const translations = {
 
     // Register Page
     createAccountTitle: "Akkaunt Yaratish",
-    joinRozimurod: "Bugun Rozimurod Market ga qo'shiling va o'z ijodiy sayohatingizni boshlang",
+    joinRozimurod:
+      "Bugun Rozimurod Market ga qo'shiling va o'z ijodiy sayohatingizni boshlang",
     fullName: "To'liq Ism",
     johnDoe: "Abdullayev Nodirjon",
     atLeast8Characters: "Kamida 8 ta belgi",
@@ -114,7 +122,8 @@ export const translations = {
 
     // Marketplace
     marketplaceTitle: "Bozor",
-    discoverAmazingProducts: "{count} ta ajoyib raqamli mahsulotni kashf qiling",
+    discoverAmazingProducts:
+      "{count} ta ajoyib raqamli mahsulotni kashf qiling",
     sortBy: "Saralash...",
     trendingSort: "Orttirilgan",
     newest: "Eng Yangi",
@@ -150,7 +159,8 @@ export const translations = {
     adultContent: "Kattalar Kontent",
     illegalContent: "Qonun Bo'yicha Taqiqlangan",
     unethicalContent: "Axloq Bo'yicha Taqiqlangan",
-    agreeToTermsUpload: "Men barcha shartlarga rozi bo'yaman va qonuni kontent taqdim etayotganiman",
+    agreeToTermsUpload:
+      "Men barcha shartlarga rozi bo'yaman va qonuni kontent taqdim etayotganiman",
 
     // Wallet & Payment
     walletBalance: "Hamyon Balansi",
@@ -242,8 +252,10 @@ export const translations = {
     securePurchase: "Безопасная покупка",
     instantDelivery: "Мгновенная доставка",
     signUpInSeconds: "Зарегистрируйтесь за секунды и настройте свой профиль",
-    discoverAmazing: "Откройте для себя потрясающие цифровые продукты от творцов со всего мира",
-    paySafely: "Платите безопасно с помощью Stripe, PayPal или цифровых кошельков",
+    discoverAmazing:
+      "Откройте для себя потрясающие цифровые продукты от творцов со всего мира",
+    paySafely:
+      "Платите безопасно с помощью Stripe, PayPal или цифровых кошельков",
     getYourProduct: "Получите свой продукт мгновенно или по электронной почте",
     readyToStart: "Готовы начать свой путь?",
     joinThousands:
@@ -252,15 +264,19 @@ export const translations = {
 
     // Features
     lightningFast: "Молниеносно быстро",
-    instantProductDelivery: "Мгновенная доставка продукта и передача после покупки",
+    instantProductDelivery:
+      "Мгновенная доставка продукта и передача после покупки",
     secureEncrypted: "Безопасно и зашифровано",
-    militaryGradeEncryption: "Военное шифрование для всех данных пользователя и транзакций",
+    militaryGradeEncryption:
+      "Военное шифрование для всех данных пользователя и транзакций",
     realTimeChat: "Чат в реальном времени",
-    communicateDirectly: "Общайтесь напрямую с покупателями и продавцами мгновенно",
+    communicateDirectly:
+      "Общайтесь напрямую с покупателями и продавцами мгновенно",
     verifiedReviews: "Проверенные отзывы",
     authenticRatings: "Подлинные оценки проверенных покупателей и продавцов",
     aiRecommendations: "AI рекомендации",
-    smartSuggestions: "Умные предложения на основе ваших предпочтений и поведения",
+    smartSuggestions:
+      "Умные предложения на основе ваших предпочтений и поведения",
     multilingual: "Многоязычный",
     supportForLanguages: "Поддержка 50+ языков и глобальных платежных систем",
 
@@ -285,7 +301,8 @@ export const translations = {
 
     // Register Page
     createAccountTitle: "Создать аккаунт",
-    joinRozimurod: "Присоединитесь к Rozimurod Market сегодня и начните свой творческий путь",
+    joinRozimurod:
+      "Присоединитесь к Rozimurod Market сегодня и начните свой творческий путь",
     fullName: "Полное имя",
     johnDoe: "Иван Петров",
     atLeast8Characters: "Минимум 8 символов",
@@ -345,7 +362,8 @@ export const translations = {
     adultContent: "Контент для взрослых",
     illegalContent: "Незаконный контент",
     unethicalContent: "Неэтичный контент",
-    agreeToTermsUpload: "Я согласен со всеми условиями и предоставляю законный контент",
+    agreeToTermsUpload:
+      "Я согласен со всеми условиями и предоставляю законный контент",
 
     // Wallet & Payment
     walletBalance: "Баланс кошелька",

@@ -27,7 +27,7 @@ export default function WalletPage() {
 
   const walletData = {
     totalBalance: 4852.43,
-    pendingBalance: 129.50,
+    pendingBalance: 129.5,
     totalEarnings: 12450.75,
     platformCommission: 124.51,
     bankAccounts: [
@@ -46,7 +46,7 @@ export default function WalletPage() {
       type: "sale",
       description: "E-Commerce Template Sale",
       amount: 49.99,
-      commission: 0.50,
+      commission: 0.5,
       net: 49.49,
       date: "2024-01-15",
       status: "completed",
@@ -65,7 +65,7 @@ export default function WalletPage() {
       type: "sale",
       description: "UI Kit Design Sale",
       amount: 79.99,
-      commission: 0.80,
+      commission: 0.8,
       net: 79.19,
       date: "2024-01-13",
       status: "completed",
@@ -76,7 +76,7 @@ export default function WalletPage() {
       type: "sale",
       description: "Web Template Sale",
       amount: 29.99,
-      commission: 0.30,
+      commission: 0.3,
       net: 29.69,
       date: "2024-01-12",
       status: "completed",
@@ -86,9 +86,9 @@ export default function WalletPage() {
 
   const earnings = [
     { month: "Jan", sales: 1200, commission: 12, net: 1188 },
-    { month: "Feb", sales: 1450, commission: 14.50, net: 1435.50 },
+    { month: "Feb", sales: 1450, commission: 14.5, net: 1435.5 },
     { month: "Mar", sales: 2100, commission: 21, net: 2079 },
-    { month: "Apr", sales: 2890, commission: 28.90, net: 2861.10 },
+    { month: "Apr", sales: 2890, commission: 28.9, net: 2861.1 },
     { month: "May", sales: 3500, commission: 35, net: 3465 },
   ];
 
@@ -126,11 +126,11 @@ export default function WalletPage() {
             </div>
             <div className="mb-6">
               <p className="text-5xl font-bold text-white mb-2">
-                {showBalance ? `$${walletData.totalBalance.toFixed(2)}` : "****"}
+                {showBalance
+                  ? `$${walletData.totalBalance.toFixed(2)}`
+                  : "****"}
               </p>
-              <p className="text-white/70 text-sm">
-                Ready to withdraw anytime
-              </p>
+              <p className="text-white/70 text-sm">Ready to withdraw anytime</p>
             </div>
             <Button
               className="w-full bg-white/20 hover:bg-white/30 text-white border border-white/30"
@@ -171,9 +171,7 @@ export default function WalletPage() {
             <p className="text-3xl font-bold text-foreground mb-1">
               ${walletData.totalEarnings.toFixed(2)}
             </p>
-            <p className="text-xs text-muted-foreground">
-              All-time earnings
-            </p>
+            <p className="text-xs text-muted-foreground">All-time earnings</p>
           </Card>
         </div>
 
@@ -188,7 +186,8 @@ export default function WalletPage() {
               <p className="text-sm text-muted-foreground">
                 For every sale, Rozimurod Market retains 1% as commission.
                 <strong className="block mt-1">
-                  Total Commission Collected: ${walletData.platformCommission.toFixed(2)}
+                  Total Commission Collected: $
+                  {walletData.platformCommission.toFixed(2)}
                 </strong>
               </p>
             </div>
@@ -301,7 +300,8 @@ export default function WalletPage() {
                       Minimum Withdrawal: $50
                     </p>
                     <p className="text-muted-foreground">
-                      Withdrawals are processed within 1-2 business days to your connected bank account.
+                      Withdrawals are processed within 1-2 business days to your
+                      connected bank account.
                     </p>
                   </div>
                 </div>
@@ -310,7 +310,10 @@ export default function WalletPage() {
               {/* Withdraw Form */}
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="bankAccount" className="font-semibold mb-2 block">
+                  <Label
+                    htmlFor="bankAccount"
+                    className="font-semibold mb-2 block"
+                  >
                     Bank Account
                   </Label>
                   <div className="flex items-center gap-3 p-4 border border-border rounded-lg bg-muted/30">
@@ -328,7 +331,10 @@ export default function WalletPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="withdrawAmount" className="font-semibold mb-2 block">
+                  <Label
+                    htmlFor="withdrawAmount"
+                    className="font-semibold mb-2 block"
+                  >
                     Withdraw Amount
                   </Label>
                   <div className="relative">
@@ -354,17 +360,25 @@ export default function WalletPage() {
                 {withdrawAmount && (
                   <div className="p-4 bg-muted rounded-lg space-y-2">
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-muted-foreground">Withdraw Amount:</span>
+                      <span className="text-muted-foreground">
+                        Withdraw Amount:
+                      </span>
                       <span className="font-semibold text-foreground">
                         ${parseFloat(withdrawAmount || "0").toFixed(2)}
                       </span>
                     </div>
                     <div className="flex justify-between items-center text-sm">
-                      <span className="text-muted-foreground">Processing Fee:</span>
-                      <span className="font-semibold text-foreground">$0.00</span>
+                      <span className="text-muted-foreground">
+                        Processing Fee:
+                      </span>
+                      <span className="font-semibold text-foreground">
+                        $0.00
+                      </span>
                     </div>
                     <div className="border-t border-border pt-2 flex justify-between items-center">
-                      <span className="font-semibold text-foreground">Total:</span>
+                      <span className="font-semibold text-foreground">
+                        Total:
+                      </span>
                       <span className="text-lg font-bold text-primary">
                         ${parseFloat(withdrawAmount || "0").toFixed(2)}
                       </span>
@@ -389,7 +403,9 @@ export default function WalletPage() {
           {/* Payment Methods Tab */}
           <TabsContent value="payment-methods" className="space-y-4">
             <Card className="p-8 border-border">
-              <h3 className="font-bold text-foreground mb-6">Payment Methods</h3>
+              <h3 className="font-bold text-foreground mb-6">
+                Payment Methods
+              </h3>
 
               {/* Current Bank Account */}
               <div className="space-y-4 mb-6">
@@ -421,7 +437,9 @@ export default function WalletPage() {
 
               <div className="mt-6 p-4 bg-muted/50 rounded-lg">
                 <p className="text-xs text-muted-foreground">
-                  We support Stripe and PayPal for secure transfers. All connections are encrypted and your banking information is never shared.
+                  We support Stripe and PayPal for secure transfers. All
+                  connections are encrypted and your banking information is
+                  never shared.
                 </p>
               </div>
             </Card>
@@ -430,7 +448,9 @@ export default function WalletPage() {
           {/* Earnings Tab */}
           <TabsContent value="earnings" className="space-y-4">
             <Card className="p-8 border-border">
-              <h3 className="font-bold text-foreground mb-6">Earnings Summary</h3>
+              <h3 className="font-bold text-foreground mb-6">
+                Earnings Summary
+              </h3>
 
               <div className="space-y-4">
                 {earnings.map((month, idx) => (
@@ -439,7 +459,9 @@ export default function WalletPage() {
                     className="flex items-center justify-between p-4 hover:bg-muted/50 rounded-lg transition border border-transparent hover:border-border"
                   >
                     <div>
-                      <p className="font-semibold text-foreground">{month.month}</p>
+                      <p className="font-semibold text-foreground">
+                        {month.month}
+                      </p>
                     </div>
                     <div className="flex items-center gap-8">
                       <div className="text-right">
@@ -449,7 +471,9 @@ export default function WalletPage() {
                         </p>
                       </div>
                       <div className="text-right min-w-fit">
-                        <p className="text-sm text-muted-foreground">Commission</p>
+                        <p className="text-sm text-muted-foreground">
+                          Commission
+                        </p>
                         <p className="font-bold text-destructive">
                           -${month.commission.toFixed(2)}
                         </p>
