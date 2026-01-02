@@ -19,10 +19,30 @@ import { Link } from "react-router-dom";
 
 export default function SellerDashboard() {
   const stats = [
-    { label: "Total Sales", value: "127", icon: ShoppingBag, color: "from-blue-500 to-blue-600" },
-    { label: "Total Earnings", value: "$12,543.67", icon: DollarSign, color: "from-green-500 to-green-600" },
-    { label: "Active Products", value: "23", icon: Package, color: "from-purple-500 to-purple-600" },
-    { label: "Avg Rating", value: "4.8★", icon: TrendingUp, color: "from-yellow-500 to-yellow-600" },
+    {
+      label: "Total Sales",
+      value: "127",
+      icon: ShoppingBag,
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      label: "Total Earnings",
+      value: "$12,543.67",
+      icon: DollarSign,
+      color: "from-green-500 to-green-600",
+    },
+    {
+      label: "Active Products",
+      value: "23",
+      icon: Package,
+      color: "from-purple-500 to-purple-600",
+    },
+    {
+      label: "Avg Rating",
+      value: "4.8★",
+      icon: TrendingUp,
+      color: "from-yellow-500 to-yellow-600",
+    },
   ];
 
   const myProducts = [
@@ -110,7 +130,10 @@ export default function SellerDashboard() {
               Manage your products, track sales, and monitor earnings
             </p>
           </div>
-          <Button className="rounded-lg bg-gradient-to-r from-primary to-accent" asChild>
+          <Button
+            className="rounded-lg bg-gradient-to-r from-primary to-accent"
+            asChild
+          >
             <Link to="/upload">
               <Plus className="w-5 h-5 mr-2" />
               Upload Product
@@ -123,9 +146,14 @@ export default function SellerDashboard() {
           {stats.map((stat, idx) => {
             const Icon = stat.icon;
             return (
-              <Card key={idx} className="p-6 bg-gradient-to-br border-0 shadow-lg-elevated">
+              <Card
+                key={idx}
+                className="p-6 bg-gradient-to-br border-0 shadow-lg-elevated"
+              >
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-br ${stat.color}`}>
+                  <div
+                    className={`p-3 rounded-lg bg-gradient-to-br ${stat.color}`}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                 </div>
@@ -215,10 +243,16 @@ export default function SellerDashboard() {
                         </td>
                         <td className="px-6 py-4">
                           <Badge
-                            variant={product.status === "active" ? "secondary" : "outline"}
+                            variant={
+                              product.status === "active"
+                                ? "secondary"
+                                : "outline"
+                            }
                             className="rounded-full text-xs"
                           >
-                            {product.status === "active" ? "✓ Active" : "⏳ Pending"}
+                            {product.status === "active"
+                              ? "✓ Active"
+                              : "⏳ Pending"}
                           </Badge>
                         </td>
                         <td className="px-6 py-4 text-right space-x-2">
@@ -358,7 +392,9 @@ export default function SellerDashboard() {
               </Card>
 
               <Card className="p-8 border-border">
-                <h3 className="font-bold text-foreground mb-6">Earnings Breakdown</h3>
+                <h3 className="font-bold text-foreground mb-6">
+                  Earnings Breakdown
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-center justify-between p-4 rounded-lg bg-green-500/10 border border-green-200 dark:border-green-900">
                     <span className="text-sm font-semibold text-foreground">
@@ -399,8 +435,9 @@ export default function SellerDashboard() {
                 Platform Commission (1%)
               </h3>
               <p className="text-sm text-muted-foreground mb-3">
-                Rozimurod Market charges 1% commission on every sale to maintain the platform.
-                You receive 99% of the product price directly to your wallet.
+                Rozimurod Market charges 1% commission on every sale to maintain
+                the platform. You receive 99% of the product price directly to
+                your wallet.
               </p>
               <p className="text-xs text-muted-foreground">
                 Example: Product sells for $100 → You get $99 | Platform gets $1

@@ -20,10 +20,30 @@ import {
 
 export default function AdminDashboard() {
   const stats = [
-    { label: "Total Users", value: "12,543", icon: Users, color: "from-blue-500 to-blue-600" },
-    { label: "Total Products", value: "8,291", icon: Package, color: "from-purple-500 to-purple-600" },
-    { label: "Revenue (1%)", value: "$124,567", icon: DollarSign, color: "from-green-500 to-green-600" },
-    { label: "Pending Reviews", value: "47", icon: AlertCircle, color: "from-orange-500 to-orange-600" },
+    {
+      label: "Total Users",
+      value: "12,543",
+      icon: Users,
+      color: "from-blue-500 to-blue-600",
+    },
+    {
+      label: "Total Products",
+      value: "8,291",
+      icon: Package,
+      color: "from-purple-500 to-purple-600",
+    },
+    {
+      label: "Revenue (1%)",
+      value: "$124,567",
+      icon: DollarSign,
+      color: "from-green-500 to-green-600",
+    },
+    {
+      label: "Pending Reviews",
+      value: "47",
+      icon: AlertCircle,
+      color: "from-orange-500 to-orange-600",
+    },
   ];
 
   const pendingProducts = [
@@ -129,7 +149,9 @@ export default function AdminDashboard() {
                 }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-br ${stat.color}`}>
+                  <div
+                    className={`p-3 rounded-lg bg-gradient-to-br ${stat.color}`}
+                  >
                     <Icon className="w-6 h-6 text-white" />
                   </div>
                   <Badge variant="secondary" className="rounded-full">
@@ -221,10 +243,16 @@ export default function AdminDashboard() {
                         </td>
                         <td className="px-6 py-4">
                           <Badge
-                            variant={product.status === "flagged" ? "destructive" : "secondary"}
+                            variant={
+                              product.status === "flagged"
+                                ? "destructive"
+                                : "secondary"
+                            }
                             className="rounded-full text-xs"
                           >
-                            {product.status === "flagged" ? "⚠️ Flagged" : "⏳ Pending"}
+                            {product.status === "flagged"
+                              ? "⚠️ Flagged"
+                              : "⏳ Pending"}
                           </Badge>
                         </td>
                         <td className="px-6 py-4 text-right space-x-2">
@@ -339,7 +367,8 @@ export default function AdminDashboard() {
                   User Management
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Detailed user management interface for ban/unban, role assignment, and user verification
+                  Detailed user management interface for ban/unban, role
+                  assignment, and user verification
                 </p>
                 <Button className="rounded-lg bg-gradient-to-r from-primary to-accent">
                   View User List
@@ -389,7 +418,11 @@ export default function AdminDashboard() {
                         </td>
                         <td className="px-6 py-4">
                           <Badge
-                            variant={report.status === "banned" ? "destructive" : "secondary"}
+                            variant={
+                              report.status === "banned"
+                                ? "destructive"
+                                : "secondary"
+                            }
                             className="rounded-full text-xs"
                           >
                             {report.status === "banned"
@@ -452,19 +485,31 @@ export default function AdminDashboard() {
                   </h3>
                   <div className="space-y-3">
                     <label className="flex items-center gap-3 cursor-pointer">
-                      <input type="checkbox" defaultChecked className="rounded" />
+                      <input
+                        type="checkbox"
+                        defaultChecked
+                        className="rounded"
+                      />
                       <span className="text-sm text-foreground">
                         Enable 2FA for admin accounts
                       </span>
                     </label>
                     <label className="flex items-center gap-3 cursor-pointer">
-                      <input type="checkbox" defaultChecked className="rounded" />
+                      <input
+                        type="checkbox"
+                        defaultChecked
+                        className="rounded"
+                      />
                       <span className="text-sm text-foreground">
                         Require email verification for new users
                       </span>
                     </label>
                     <label className="flex items-center gap-3 cursor-pointer">
-                      <input type="checkbox" defaultChecked className="rounded" />
+                      <input
+                        type="checkbox"
+                        defaultChecked
+                        className="rounded"
+                      />
                       <span className="text-sm text-foreground">
                         Enable fraud detection system
                       </span>

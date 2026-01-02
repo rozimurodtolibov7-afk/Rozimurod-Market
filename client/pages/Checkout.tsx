@@ -24,7 +24,8 @@ export default function Checkout() {
       title: "E-Commerce Website Template",
       price: 49.99,
       seller: "Web Dev Studio",
-      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=150&h=150&fit=crop",
+      image:
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=150&h=150&fit=crop",
     },
   ];
 
@@ -65,9 +66,7 @@ export default function Checkout() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Page Header */}
-        <h1 className="text-4xl font-bold text-foreground mb-2">
-          🛒 Checkout
-        </h1>
+        <h1 className="text-4xl font-bold text-foreground mb-2">🛒 Checkout</h1>
         <p className="text-muted-foreground mb-12">
           Complete your purchase securely
         </p>
@@ -154,7 +153,10 @@ export default function Checkout() {
 
                 <div className="space-y-4">
                   <div>
-                    <Label htmlFor="cardName" className="font-semibold mb-2 block">
+                    <Label
+                      htmlFor="cardName"
+                      className="font-semibold mb-2 block"
+                    >
                       Cardholder Name
                     </Label>
                     <Input
@@ -165,7 +167,10 @@ export default function Checkout() {
                   </div>
 
                   <div>
-                    <Label htmlFor="cardNumber" className="font-semibold mb-2 block">
+                    <Label
+                      htmlFor="cardNumber"
+                      className="font-semibold mb-2 block"
+                    >
                       Card Number
                     </Label>
                     <Input
@@ -177,7 +182,10 @@ export default function Checkout() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <Label htmlFor="expiry" className="font-semibold mb-2 block">
+                      <Label
+                        htmlFor="expiry"
+                        className="font-semibold mb-2 block"
+                      >
                         Expiry Date
                       </Label>
                       <Input
@@ -257,11 +265,7 @@ export default function Checkout() {
                     <Label htmlFor="state" className="font-semibold mb-2 block">
                       State/Province
                     </Label>
-                    <Input
-                      id="state"
-                      placeholder="NY"
-                      className="rounded-lg"
-                    />
+                    <Input id="state" placeholder="NY" className="rounded-lg" />
                   </div>
                   <div>
                     <Label htmlFor="zip" className="font-semibold mb-2 block">
@@ -382,8 +386,8 @@ export default function Checkout() {
                     Platform Commission
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    Rozimurod Market charges 1% on all purchases to maintain
-                    the platform and ensure secure transactions.
+                    Rozimurod Market charges 1% on all purchases to maintain the
+                    platform and ensure secure transactions.
                   </p>
                 </div>
               </div>
@@ -395,13 +399,21 @@ export default function Checkout() {
                 Accepted Payment Methods
               </p>
               <div className="flex flex-wrap gap-2">
-                {["💳 Visa", "💳 Mastercard", "🅿️ PayPal", "₿ Crypto", "💰 Stripe"].map(
-                  (method) => (
-                    <Badge key={method} variant="secondary" className="rounded-full text-xs">
-                      {method}
-                    </Badge>
-                  )
-                )}
+                {[
+                  "💳 Visa",
+                  "💳 Mastercard",
+                  "🅿️ PayPal",
+                  "₿ Crypto",
+                  "💰 Stripe",
+                ].map((method) => (
+                  <Badge
+                    key={method}
+                    variant="secondary"
+                    className="rounded-full text-xs"
+                  >
+                    {method}
+                  </Badge>
+                ))}
               </div>
             </Card>
           </div>
