@@ -42,6 +42,9 @@ const App = () => (
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/upload" element={<UploadProduct />} />
           <Route path="/wallet" element={<Wallet />} />
+          <Route path="/admin" element={<AdminDashboard />} />
+          <Route path="/seller-dashboard" element={<SellerDashboard />} />
+          <Route path="/checkout" element={<Checkout />} />
 
           {/* Placeholder routes */}
           <Route
