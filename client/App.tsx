@@ -36,6 +36,9 @@ const App = () => (
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/upload" element={<UploadProduct />} />
+          <Route path="/wallet" element={<Wallet />} />
 
           {/* Placeholder routes */}
           <Route
@@ -62,15 +65,6 @@ const App = () => (
               <Placeholder
                 title="Hot Deals"
                 description="Check out amazing limited-time offers on digital products."
-              />
-            }
-          />
-          <Route
-            path="/product/:id"
-            element={
-              <Placeholder
-                title="Product Details"
-                description="View detailed information about this digital product."
               />
             }
           />
