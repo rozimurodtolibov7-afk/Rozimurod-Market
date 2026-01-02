@@ -89,16 +89,6 @@ const App = () => (
             }
           />
           <Route
-            path="/wallet"
-            element={
-              <Placeholder
-                title="Wallet"
-                description="Manage your digital wallet and transaction history."
-                icon={<ShoppingCart className="w-16 h-16" />}
-              />
-            }
-          />
-          <Route
             path="/chat"
             element={
               <Placeholder
