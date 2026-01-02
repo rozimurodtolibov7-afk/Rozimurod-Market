@@ -45,7 +45,7 @@ export default function Header({
 
   const navLinks = [
     { label: "Marketplace", href: "/marketplace" },
-    { label: "Sell", href: "/sell" },
+    { label: "Sell", href: "/upload" },
     { label: "Hot Deals", href: "/hot-deals" },
     { label: "Trending", href: "/trending" },
   ];
