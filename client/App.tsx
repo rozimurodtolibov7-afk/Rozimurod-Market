@@ -105,16 +105,6 @@ const App = () => (
             }
           />
           <Route
-            path="/admin"
-            element={
-              <Placeholder
-                title="Admin Dashboard"
-                description="Analytics, user management, and platform settings."
-                icon={<BarChart3 className="w-16 h-16" />}
-              />
-            }
-          />
-          <Route
             path="/wishlist"
             element={
               <Placeholder
