@@ -166,6 +166,9 @@ export default function Index() {
                   Rozimurod Market
                 </span>
               </h1>
+              <p className="text-xl sm:text-2xl font-semibold text-primary mb-4">
+                Global Digital Marketplace
+              </p>
               <p className="text-lg text-muted-foreground max-w-lg leading-relaxed">
                 The ultimate marketplace for digital creators. Sell your
                 designs, images, logos, and digital products to millions of
