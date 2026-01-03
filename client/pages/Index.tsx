@@ -180,7 +180,7 @@ export default function Index() {
                   className="rounded-lg bg-gradient-to-r from-primary to-accent hover:shadow-lg transition-shadow"
                   asChild
                 >
-                  <Link to="/marketplace">Start Exploring</Link>
+                  <Link to="/marketplace">Explore Marketplace</Link>
                 </Button>
                 <Button
                   size="lg"
@@ -188,7 +188,7 @@ export default function Index() {
                   className="rounded-lg"
                   asChild
                 >
-                  <Link to="/sell">Start Selling</Link>
+                  <Link to="/sell">Sell Your Product</Link>
                 </Button>
               </div>
               <div className="flex flex-wrap gap-6 pt-6 border-t border-border">
